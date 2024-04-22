@@ -1,0 +1,94 @@
+/* Definición de variables de color */
+:root {
+    --primary-color: #9c27b0; /* Color primario */
+    --secondary-color: #fff; /* Color secundario */
+    --background-color: #171717; /* Color de fondo */
+    --accent-color: #3f3f3f; /* Color de acento */
+}
+
+/* Estilos generales del cuerpo del documento */
+body {
+    font-family: sans-serif; /* Fuente predeterminada */
+    background-color: var(--background-color); /* Color de fondo */
+    color: var(--secondary-color); /* Color de texto */
+    padding-top: 80px; /* Espacio superior */
+}
+
+/* Estilos del encabezado */
+.head {
+    background-color: var(--background-color); /* Color de fondo */
+    color: var(--secondary-color); /* Color de texto */
+    position: fixed; /* Posición fija */
+    top: 0; /* Arriba */
+    left: 0; /* Izquierda */
+    width: 100%; /* Ancho completo */
+    z-index: 100; /* Índice z */
+    padding: 10px 20px; /* Relleno */
+    display: flex; /* Display de tipo flex */
+    justify-content: space-between; /* Alineación de los elementos */
+    align-items: center; /* Alineación de los elementos */
+}
+
+/* Estilos del logotipo */
+.logo h1 a {
+    text-decoration: none; /* Sin subrayado */
+    color: var(--secondary-color); /* Color de texto */
+}
+
+/* Estilos de la barra de navegación */
+.navbar ul {
+    list-style-type: none; /* Sin viñetas */
+    margin: 0; /* Margen cero */
+    padding: 0; /* Relleno cero */
+    display: flex; /* Display de tipo flex */
+}
+
+.navbar ul li {
+    margin-right: 20px; /* Margen derecho */
+}
+
+.navbar ul li a {
+    text-decoration: none; /* Sin subrayado */
+    color: var(--secondary-color); /* Color de texto */
+    text-transform: uppercase; /* Convertir a mayúsculas */
+}
+
+/* Estilos del contenido */
+.content {
+    text-align: center; /* Alineación centrada */
+    padding: 50px; /* Relleno */
+}
+
+/* Estilos del título */
+.title {
+    font-size: 36px; /* Tamaño de fuente */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos del botón */
+.btn {
+    display: inline-block; /* Display de tipo inline-block */
+    padding: 10px 20px; /* Relleno */
+    background-color: var(--primary-color); /* Color de fondo */
+    color: var(--secondary-color); /* Color de texto */
+    text-decoration: none; /* Sin subrayado */
+    text-transform: uppercase; /* Convertir a mayúsculas */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Radio del borde */
+    transition: background-color 0.3s ease; /* Transición de color de fondo */
+}
+
+.btn:hover {
+    background-color: var(--accent-color); /* Color de fondo al pasar el ratón */
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: var(--background-color); /* Color de fondo */
+    color: var(--secondary-color); /* Color de texto */
+    text-align: center; /* Alineación centrada */
+    padding: 20px 0; /* Relleno */
+    position: absolute; /* Posición absoluta */
+    bottom: 0; /* Abajo */
+    width: 100%; /* Ancho completo */
+}
